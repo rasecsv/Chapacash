@@ -1,0 +1,70 @@
+.bg-green{
+	background-color: #75C322;
+}
+
+.bg-green h1, .bg-green p{
+	color: #fff;
+}
+
+.bg-green a.btn:hover {
+	background-color: #fff;
+	color: #75C322;
+}
+
+.white-line{
+	border-top: 2px solid #fff;
+}
+
+#aun-no-te-decides:focus{
+	background-color: #fff!important;
+	color: #75C322;
+}
+
+#conocer-mas:focus{
+	background-color: #fff!important;
+	color: #75C322;
+}
+
+#conocer-mas:hover{
+	background-color: #fff!important;
+	color: #75C322;
+}
+
+span#basic-addon1, span#basic-addon2{
+	width: initial;
+	border-top: 2px solid #75c322;
+	border-bottom: 2px solid #75c322;
+	border-left: 2px solid #75c322;
+}
+
+.ui-slider-horizontal{
+	height: 20px;
+}
+
+.slide-ranger .ui-slider .ui-slider-handle{
+	border-radius: 0%;
+}
+
+.ui-slider .ui-slider-handle{
+	height: 24px;
+}
+
+.slide-ranger .ui-widget-header{
+	background-color: #75c322;
+}
+
+.ui-widget-header{
+	background: initial;
+}
+
+#spinner2{
+	padding-right: 120px;
+}
+
+a.ui-button{
+	background:initial;	
+}
+
+span[id="basic-addon1"].input-group-addon{
+	padding: 9px 9px;
+}
