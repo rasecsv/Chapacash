@@ -5,10 +5,13 @@
         var dat =parseInt($("#solesTexto").val()) + parseInt(cont);
         if(dat < 1000){
             document.getElementById('solesTexto').value = dat;
+            localStorage.setItem('solesTexto',dat);
         }else{
         openModal3();
         }
         });
+        });
+     $(document).ready(function(){
         $("#menosSoles").click(function(){
         var dat =parseInt($("#solesTexto").val())- parseInt(cont);
         if(dat >= 100){
@@ -17,9 +20,14 @@
            openModal4();
         }
         });
-         // calcular dias para el prestamo
+    });    
+        
+
+        
+    // calcular dias para el prestamo
          var d = 5;
-         $("#menosDias").click(function(){
+     $(document).ready(function(){
+        $("#menosDias").click(function(){
         var dat =parseInt($("#diasTexto").val())- parseInt(d);
         if(dat >= 5){
         document.getElementById('diasTexto').value = dat;   
@@ -27,6 +35,8 @@
         openModal2();
         }
         });
+        });
+   $(document).ready(function(){
         $("#masDias").click(function(){
         var dat =parseInt($("#diasTexto").val()) +  parseInt(d);
         if(dat <= 30){
@@ -36,7 +46,8 @@
         //    window.open(  "width=380, height=500, top=85, left=50", true);
                 openModal();
         }
-        });        
+        });
+    });
     function openModal(){
         $("#dmasDias").modal( );
     }
@@ -51,82 +62,78 @@
     }
 
    var tasa = 0.001;
-
+  $(document).ready(function(){
       $("#masDias").click(function(){
           var monto = parseInt($("#solesTexto").val()) + ( parseInt($("#solesTexto").val())*(parseFloat(tasa))*(parseInt($("#diasTexto").val()))) ;
-          document.getElementById("monto").innerHTML= monto;
-          var dat =parseInt($("#solesTexto").val());
-          var day = parseInt($("#diasTexto").val())
-           var objeto ={'monto':dat,'dias':day , 'total':monto};
-               localStorage.setItem('datos',JSON.stringify(objeto));
+          document.getElementById("monto").innerHTML = monto;
       })
-  
-  
+  });
+  $(document).ready(function(){
       $("#menosDias").click(function(){
           var monto = parseInt($("#solesTexto").val()) + ( parseInt($("#solesTexto").val())*(parseFloat(tasa))*(parseInt($("#diasTexto").val()))) ;
-          document.getElementById("monto").innerHTML= monto;
-          var dat =parseInt($("#solesTexto").val());
-          var day = parseInt($("#diasTexto").val())
-           var objeto ={'monto':dat,'dias':day, 'total':monto};
-               localStorage.setItem('datos',JSON.stringify(objeto));
+          document.getElementById("monto").innerHTML = monto;
       })
- 
+  });
+$(document).ready(function(){
       $("#masSoles").click(function(){
           var monto = parseInt($("#solesTexto").val()) + ( parseInt($("#solesTexto").val())*(parseFloat(tasa))*(parseInt($("#diasTexto").val()))) ;
-          document.getElementById("monto").innerHTML= monto;
-          var dat =parseInt($("#solesTexto").val());
-          var day = parseInt($("#diasTexto").val())
-           var objeto ={'monto':dat,'dias':day , 'total':monto};
-               localStorage.setItem('datos',JSON.stringify(objeto));
+          document.getElementById("monto").innerHTML = monto;
       })
- 
+  });
     
+$(document).ready(function(){
       $("#menosSoles").click(function(){
           var monto = parseInt($("#solesTexto").val()) + ( parseInt($("#solesTexto").val())*(parseFloat(tasa))*(parseInt($("#diasTexto").val()))) ;
-          document.getElementById("monto").innerHTML= monto;
-          var dat =parseInt($("#solesTexto").val());
-          var day = parseInt($("#diasTexto").val())
-           var objeto ={'monto':dat,'dias':day ,'total':monto};
-               localStorage.setItem('datos',JSON.stringify(objeto));
+          document.getElementById("monto").innerHTML = monto;
       })
-      
-// Get the modal
-var modal = document.getElementById('modalformulario');
-
-// Get the button that opens the modal
-var btn = document.getElementById("btnmodal");
-var btn2 = document.getElementById("aun-no-te-decides2");
-var btn3 = document.getElementById("solicitar-prestamo2");
-var btn4 = document.getElementById("btn-porqueelegirnos");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-btn2.onclick = function() {
-    modal.style.display = "block";
-}
-btn3.onclick = function() {
-    modal.style.display = "block";
-}
-btn4.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}     
- });
+  });
     
+
+// probando persistencia de los  datos pru1
+/*$(document).ready(function(){
+    $('#enviar').click(function(){
+        var monto= document.getElementById("solesTexto").value;
+       
+        localStorage.setItem("Soles",monto);
+       
+        var cantidad = localStorage.getItem("Soles");
+        alert(cantidad);
+        document.getElementById("Soles2").innerHTML= cantidad;
+     
+        document.getElementById("formDias").innerHTML=dias;
+        
+    })
+});*/
+/*function enviar(){
+    var monto= document.getElementById("solesTexto").value;
+    var dias = document.getElementById("diasTexto").value;
+    $.post("dato.php",{
+        "solesTexto":monto ,"dias":dias},function(respuesta){
+        alert(respuesta);
+    }
+    )
+}*/
+/*$(document).ready(function(){
+   $('#enviar').click(function(){
+       var url="dato.php";
+       $.ajax({
+           type:"POST",
+           url: url,
+           data:$("#valor").serialize(),
+           success:function(data){
+               $('#resp').html(data);
+           }
+       });
+   }); 
+    
+});*/
+
+$(document).ready(function(){
+    $("#enviar").click(function(){
+    $.get("formulario.html",function(){
+    var mont = document.getElementById("solesTexto").value;
+    document.getElementById("formSoles").innerHTML=mont;
+    })
+    })
+});
 

@@ -38,7 +38,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="animsition">
      <!-- loading -->             
     <!-- loading End -->
    
@@ -66,40 +66,29 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="formulario">
+    <div class="hero">
         <div class="container">
             <div class="row">
-                <div class = "col-mod-12">
-                <div class="col-md-5 col-md-offset-1 col-xs-12">
-                    <form method="post" action="php/contact-form.php">
-                        <div class = "request-form">
-                        <div class="col-xs-12">
-                           <label>Nombre:</label>
-                            <input type="text" class="CalcuText2" id ="name" name="name" placeholder="Nombre" required="">
-                        </div>
-                        
-                        <div class="col-xs-12">
-                            <label >Telefono:</label>
-                            <input type="text" class="CalcuText2" id ="phone" name="phone" pattern="[0-9]{9}" placeholder="Telefono" required="" >   
-                        </div>
-                        <div class="col-xs-12">
-                            <label >Email:</label>
-                            <input type="email" class="CalcuText2" id ="email" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required="" placeholder="Email">       
-                        </div>
-                        <div class="col-xs-12">
-                            <label >Comentario:</label>
-                            <textarea class="form-control"  placeholder="Ingrese un comentario" rows="5" name="message" id="message" required=""></textarea>
-                        </div>                   
-                            <!--<input type="comentario" class="form-control" id="comentario" placeholder="Ingrese un comentario" row="5"-->
-                            <button type="submit" name="enviar" id="enviar" value="Send" class="btn btn-default">Enviar</button>
-                            </div>
-                    </form>
+                <div class="col-md-6 col-sm-12 col-xs-12">
                 </div>
-               
-                    <div class="col-md-6 col-mod-offset-1 col-xs-12 ">
-                        <div class="google-maps">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15609.60487510503!2d-77.0967244!3d-12.0158757!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1524237453372" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+                <div data-aos="fade-up">
+                    <div class="col-md-5 col-md-offset-1 col-xs-12">
+                    <div class="request-form ">
+                        <form action="#">
+                            <div class = "form-group">
+                            <label for="nombre">Nombre:</label>
+                                <input type="nombre" class="form-control" id ="nombre" placeholder="Ingrese su nombre completo">
+                             <label for="telefono">Telefono:</label>
+                                <input type="telefono" class="form-control" id ="telefono" placeholder="Ingrese su telefono">
+                             <label for="email">Email:</label>
+                                <input type="email" class="form-control" id ="email"   placeholder="Ingrese su email">
+                        
+                            <label for="comentario">Comentario:</label>
+                            <!--<textarea class="from-control"  placeholder="Ingrese un comentario" rows="5" id="comment"></textarea>-->
+                            <input type="comentario" class="form-control" id="comentario" placeholder="Ingrese un comentario" row="5">
+                            <button type="button" id="enviar" class="btn btn-default">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 </div>
@@ -107,16 +96,11 @@
             <!--div class="row">
                 <div class="col-md-8 col-sm-8 text-center"> <a id="conocer-mas" href="#" class="btn btn-default">Conocer más</a> </div>
             </div-->
-        
+        </div>
     </div>
     
 	
 	
-    <style>
-            #spam{
-		          display:none;
-                }
-    </style>
 
 	
    

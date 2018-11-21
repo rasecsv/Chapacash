@@ -11,20 +11,21 @@
     <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
 	<link href=" " href="" type="sytelesheet">
+    <link rel="stylesheet" href="css/aos.css" />
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/fontello.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/animsition.min.css">
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/aos.css" />
-    <script src="js/aos.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <sript type="text/javascript" src="wow.min.js"></sript>
+      <script src="js/aos.js"></script>
     <script defer type="text/javascript" src="./js/prueba.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"-->
     <!-- Google Fonts -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/propios.css">
      <!-- Compiled and minified CSS -->
@@ -36,8 +37,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+
 <body class="animsition">
+     <!-- loading -->             
+    <!-- loading End -->
+   
 	<nav class="navbar navbar-default" style="background-color: #fff; margin-bottom: initial;">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -47,11 +51,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="button"></span>
-              
           </button>
-          <a class="navbar-brand" href="index.html" style="height: initial;margin-left: 50px;"><!-- --><img src="images/logo250.png"></a>
+          <a class="navbar-brand" href="landing-page-car-loan.html" style="height: initial;margin-left: 50px;"><!-- --><img src="images/logo250.png"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,8 +61,7 @@
            <li><a href="#como-funciona" class="scroll">Cómo funciona</a></li>
             <li><a href="#porque-elegirnos" class="scroll">Por qué elegirnos</a></li>
             <li><a href="#preguntas-frecuentes" class="scroll">Preguntas Frecuentes</a></li>            
-            <li><a href="contacto.html">Contacto</a></li>
-              <li><a id="btnPrestamo">Quieres prestamo</a></li>
+            <!--li><a href="#nosotros">Nosotros</a></li-->
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -71,17 +71,17 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                 </div>
-                <div data-aos="fade-up" data-aos-delay="400">
+                <div data-aos="fade-up">
                 <div class="col-md-5 col-md-offset-1 col-xs-12">
-                    <div class="request-form">
-                        <form method="POST" action="#">
+                    <div class="request-form ">
+                        <form method="post" action="#">
 							<div id="calculadora">
 								<div id="grupo01">
 									<p class="CalcuH2">¿Cuánto dinero necesitas?</p>
 									<div class="input-group" style="display: flex; margin-left:52px;">
                                         
 											<span class="input-group-addon CalcuControls" id="menosSoles" style="background-color: #62932800; border:none;"><img src="images/menos.png"></span>
-											<input type="text" id="solesTexto" name="solesTexto" class="CalcuText" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57"  placeholder="Soles" value=" 800">
+											<input type="text" id="solesTexto" name="solesTexto" class="CalcuText" maxlength="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Soles"  value=" 800 "  >
 											<span class="input-group-addon CalcuControls" id="masSoles" style="background-color: #62932800; border:none;"><img src="images/mas.png"></span>
 									</div>
 								</div>
@@ -94,29 +94,19 @@
 											<span class="input-group-addon CalcuControls" id="masDias" style="background-color: #62932800; border:none;"><img src="images/mas.png"></span>
 									</div>
 								</div>
-                                
 								<hr>
 								<p class="CalcuH3">PAGO MENSUAL</p>
 								<p class="CalcuH1" id="monto">S/574.00</p>
                                 <!--label style="border: #75c322 solid 4px; padding: 6px;"><img src="images/pie-chart.png"></label>
                                 <input id="spinner2" value="1"><br-->
                                 <!--label style="border: #75c322 solid 4px;">@</label><input style="border: #75c322 solid 3px;" type="number"-->
-                                
                             </div>
                             <!-- fin de la calculadora -->
-                            
-                            <div class="row">
-                            <p class="CalcuH3"></p>
-                            <div class="col-xs-12 ">
-                                <!--input type="submit" class="CalcuBtn btn-block" id ="prestamos" value="Solicite su prestamo"-->
-                                <button type="button" class="CalcuBtn btn-block" id="btnmodal">Solicite su Prestamo</button>
-                            
-                            </div>
-                            
-                            </div>
-                             
+
                             <!-- Button -->
-                            
+                            <div class="form-group">
+                                <button type="submit" class="CalcuBtn btn-block">SOLICITA TU PRÉSTAMO</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -142,43 +132,41 @@
             
 			<div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                     <div data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="400" data-aos-delay="200" >
-                    <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow">
-                    
-                        <div class="circle3"><span class="number">1</span></div>
+                    <div data-aos="fade-down">
+                    <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow" >
+                        <div class="circle"><span class="number">1</span></div>
                         <img src="images/1.png">
 						<h2 class="capital-title">Define<p>el monto que necesitas</p></h2>
-                         </div>
+                        </div>
                     </div>
                 </div>
 				
 				<div class="col-md-4 col-sm-4 col-xs-12">
-                     <div data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="600">
+                    <div data-aos="fade-down">
                     <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow">
                         
-                        <div class="circle2"><span class="number">2</span></div>
+                        <div class="circle"><span class="number">2</span></div>
                         <img src="images/2.png">
 						<h2 class="capital-title">Llena<p>el formulario con tus datos</p></h2>
+                        </div>
                     </div>
                 </div>
-                </div>
+				
 				<div class="col-md-4 col-sm-4 col-xs-12">
-                     <div data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="1000">
+                    <div data-aos="fade-down">
                     <div class="bg-white pinside40 number-block outline mb60 bg-boxshadow">
-                        
-                        <div class="circle1"><span class="number">3</span></div>
+                        <div class="circle"><span class="number">3</span></div>
                         <img src="images/3.png">
 						<h2 class="capital-title">Listo<p>Chapa tu cash</p></h2>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 text-center"> <a id="btn-001" href="#porque-elegirnos" class="btn btn-default scroll">Porqué elegirnos</a> </div>
             </div>
         </div>
-    
+    </div>
     <!--FIN COMO FUNCIONA-->
 	
 	<!--¿POR QUÉ ELEGIRNOS?-->
@@ -194,32 +182,28 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
                     <div class="section-title text-center mb60">
 						<img src="images/4.png">
 						<h1>Atención 24 / 7</h1>
                         <p>Con nuestro horario de atención extendido resolvemos tus dudas en el momento</p>
                     </div>
-                    </div>
 
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div data-aos="zoom-in" data-aos-delay="500">
                     <div class="section-title text-center mb60">
                         <img src="images/5.png">
 						<h1>9 de cada 10</h1>
                         <p>Aprueban a su préstamo con nosotros.<p>
-                    </div></div>
+                    </div>
 				</div>
                 
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <!-- testimonial simple start -->
-                    <div data-aos="zoom-in" data-aos-delay="800">
+                    
                     <div class="section-title text-center mb60">
                         <img src="images/aval.png">
                         <h1>Sin Aval/Con Aval</h1>
                         <p>Se pondrá a disposición los créditos con garantías y sin garantía prendaría, dependiendo tu record crediticio.</p>
-                    </div>
                     </div>
                 </div>
                 
@@ -229,7 +213,7 @@
 					<a id="aun-no-te-decides" href="#nuestros-clientes-dicen" class="btn btn-default scroll">¿Aún no te decides?</a> 
 				</div>
 				<div class="col-md-4 col-sm-4 text-center"> 
-					<a id="aun-no-te-decides2"  class="c2aButton" style="border: 1px solid #75C322;">Solicitar Préstamo</a> 
+					<a id="aun-no-te-decides" href="#" class="c2aButton" style="border: 1px solid #75C322;">Solicitar Préstamo</a> 
 				</div>
             </div>
         </div>
@@ -250,9 +234,8 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-4 clearfix col-xs-12">
-                    <div data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400">
                     <div class="testimonial-block mb30 text-center">
-                        <div class=" mb20 testimonial-img-1"> <img src="images/testimonial-img.jpg" alt="Borrow - Loan Company Website Template" class="img-circle"> </div>
+                        <div class=" mb20 testimonial-img-1 "> <img src="images/testimonial-img.jpg" alt="Borrow - Loan Company Website Template" class="img-circle"> </div>
                         <div class="mb20">
                             <p class="testimonial-text"> “Solicité un préstamo para comprar los útiles escolares de mi hijo. Obtuve el préstamo en menos de un día y la atención fue de primera. Gracias Chapacash.”</p>
                         </div>
@@ -263,9 +246,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
 				<div class="col-md-6 col-sm-4 clearfix col-xs-12">
-                    <div data-aos="zoom-in" data-aos-duration="600" data-aos-delay="800">
                     <div class="testimonial-block mb30 text-center">
                         <div class=" mb20 testimonial-img-2"> <img src="images/testimonial-img-2.jpg" alt="Borrow - Loan Company Website Template" class="img-circle"> </div>
                         <div class="mb20">
@@ -278,40 +259,19 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
             <div class="row">
                 <div class="col-md-offset-2 col-md-4 col-sm-offset-2 col-sm-4 text-center"> 
 					<a id="solicitar-prestamo" href="#preguntas-frecuentes" class="btn btn-default scroll">¿Preguntas?</a> 
 				</div>
                 <div class="col-md-4 col-sm-4 text-center"> 
-					<a id="solicitar-prestamo2"  class="c2aButton" style="border: 1px solid;">¡Estoy Listo!</a> 
+					<a id="solicitar-prestamo" href="#" class="c2aButton" style="border: 1px solid;">¡Estoy Listo!</a> 
 				</div>
             </div>
         </div>
     </div>
 
-    
 
-<!-- The Modal -->
-<div id="modalformulario" class="modal" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-content ">
-      <div class="model-dialog "  style="width: 25%;">
-           <span class="close">&times;</span>
-          <div class="modal-header">
-                <h5  id="exampleModalLabel">Puede elegir entre 
-                    nuestras opciones</h5>
-            </div>
-            
-            <div class="modal-footer">
-                 <a class="c2aButton" href=""  style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Con Aval</a>
-                <a  href="" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Sin Aval</a>
-            </div>
-  
-      </div>
-   </div>
-
-</div>
     <!-- FAQ -->
     <div id="preguntas-frecuentes" class="section-space60" style="padding-bottom: 40px;">
         <div class="container">
@@ -377,121 +337,10 @@
                                     <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
                                 </div>
                             </div>
-                            <!--div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Cómo sé si mi prestamo fue aprobado?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Cómo recibo mi préstamo?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Cómo hago para pagar las cuotas de mi préstamo?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Puede un tercero pagar mi préstamo?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Puedo pagar antes de tiempo una o más cuotas?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Puedo solicitar un préstamo si ya tengo otro vigente?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Cómo sé si mi pago fue recibido correctamente?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Cómo me registro o accedo a Mi Cuenta por primera vez?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Cómo asocio mi cuenta a Facebook?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Qué debo hacer si no puedo pagar una cuota?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Hay alguna ventaja por ser un buen pagador?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Qué pasa si no pago mi préstamo o alguno de las cuotas?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>Si me negaron un préstamo, ¿Cuándo puedo solicitar otro nuevamente?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab" id="headingFour">
-                                    <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="fa fa-plus-circle sign"></i>¿Por qué ha sido negada mi solicitud de préstamo?</a> </h4>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                    <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
-                                </div>
-                            </div-->
+                            
 							<div class="row">
 								<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 text-center"> 
-									<a id="btn-porqueelegirnos"  class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Quiero mi préstamo ¡ya!</a> 
+									<a id="btn-porqueelegirnos" href="#" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Quiero mi préstamo ¡ya!</a> 
 								</div>
 							</div>
                         </div>
@@ -505,88 +354,10 @@
     <!-- Button trigger modal -->
     <div id="llamanos-flotante" style="display: block;">
         <a data-toggle="modal" href="#myModal">
-        <img id="img-flotante" src="images/call-2.png" style="position: fixed; top: 150px; right:0;"></a>
-          
+                <img id="img-flotante" src="images/call-2.png" style="position: fixed; top: 150px; right:0;"></a>
     </div>
-    
     <!--Modal-->
-    <!-- menu de prestamos -->
-    
-    <!--fin-->
-    
-     <!--Aviso de  dias -->
-    
-    <div class="modal fade" id="dmasDias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <!--img src="images/logo250.png"-->
-      <div class="modal-dialog" role="document" style="width: 25%;">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
-                <p>Ha excedido el numero de dias permitidos </p>
-                <p>si desea un plazo mayor contactenos </p> 
-            </div>
-            
-            <div class="modal-footer">
-                 <a class="c2aButton" data-dismiss="modal"  style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Cerrar</a>
-                <a  href="contacto.html" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Contactenos</a>
-            </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="modal fade" id="dmenosDias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <!--img src="images/logo250.png"-->
-      <div class="modal-dialog" role="document" style="width: 25%;">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
-                <p>Lo sentimos ya no puede disminuir el numero de dias</p>
-                <p> </p> 
-            </div>
-            
-        </div>
-      </div>
-    </div>
-    <!---->
-    <!--Aviso de cantidad de soles-->
-         <!--Aviso de  dias -->
-    
-    <div class="modal fade" id="dmasSoles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <!--img src="images/logo250.png"-->
-      <div class="modal-dialog" role="document" style="width: 25%;">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
-                <p>Ha excedido la cantidad maxima permitida </p>
-                <p>Si esta interesado en esa cantidad contactenos </p> 
-            </div>
-            
-            <div class="modal-footer">
-                <a class="c2aButton" data-dismiss="modal"  style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Cerrar</a>
-                <a  href="contacto.html" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Contactenos</a> 
-            </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="modal fade" id="dmenosSoles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <!--img src="images/logo250.png"-->
-      <div class="modal-dialog" role="document" style="width: 25%;">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
-                <p> Lo sentimos a sobrepasado la 
-                    cantidad minima  permitida </p>
-               
-            </div>
-            
-        </div>
-      </div>
-    </div>
+
     <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
       Launch demo modal
     </button-->
@@ -662,9 +433,82 @@
     </div>
     <!-- /.tiny footer -->
     <!-- back to top icon -->
+     <!--aviso-->
+   
+    <!--Aviso de  dias -->
+    
+    <div class="modal fade" id="dmasDias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!--img src="images/logo250.png"-->
+      <div class="modal-dialog" role="document" style="width: 25%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
+                <p>Ha excedido el numero de dias permitidos </p>
+                <p>si desea un plazo mayor contactenos </p> 
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Contactenos</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="dmenosDias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!--img src="images/logo250.png"-->
+      <div class="modal-dialog" role="document" style="width: 25%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
+                <p>Lo sentimos ya no puede disminuir el numero de dias</p>
+                <p> </p> 
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <!---->
+    <!--Aviso de cantidad de soles-->
+         <!--Aviso de  dias -->
+    
+    <div class="modal fade" id="dmasSoles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!--img src="images/logo250.png"-->
+      <div class="modal-dialog" role="document" style="width: 25%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
+                <p>Ha excedido la cantidad maxima permitida </p>
+                <p>Si esta interesado en esa cantidad contactenos </p> 
+            </div>
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Contactenos</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="dmenosSoles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!--img src="images/logo250.png"-->
+      <div class="modal-dialog" role="document" style="width: 25%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
+                <p>Lo sentimos ya no se puede reducir </p>
+                <p>la cantidad es la minima permitida</p>
+                <p> </p> 
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <!---->
+    <!---->
     <a href="#0 " class="cd-top " title="Go to top" style="background-color:#7CA537;">Top</a>
         <!-- Modal -->
-    <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <!--img src="images/logo250.png"-->
       <div class="modal-dialog" role="document" style="width: 25%;">
         <div class="modal-content">
@@ -811,22 +655,10 @@
         $("#amount").val("S/" + $("#slider-range-min").slider("value"));
     });
     </script>
-    <!--script>
-    $(function() {
-        $("#slider-range-cuotas").slider({
-            range: "min",
-            min: 1,
-            max: 3,
-            value: 2,
-            slide: function(event, ui) {
-                $("#campo-cuotas").val(ui.value);
-            }
-        });
-        $("#campo-cuotas").val($("#slider-range-cuotas").slider("value"));
-    });
-    </script-->
+   
       <!-- Compiled and minified JavaScript -->
   <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script-->
+
     <script src="js/propios.js"></script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -837,11 +669,15 @@
 			});
 		</script>
     <script>
-    AOS.init(
-    );
-        
+    AOS.init();
+  </script>
+    <script>
+       wow = new WOW({
+           boxClass :'wow',
+           animateClass: 'animated',
+           offset: 0
+       }) wow.init();
     </script>
-   
-</body>
+    
 </body>
 </html>

@@ -24,7 +24,6 @@
     <script defer type="text/javascript" src="./js/prueba.js"></script>
     <!--link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"-->
     <!-- Google Fonts -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/propios.css">
      <!-- Compiled and minified CSS -->
@@ -36,7 +35,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+
 <body class="animsition">
 	<nav class="navbar navbar-default" style="background-color: #fff; margin-bottom: initial;">
       <div class="container-fluid">
@@ -61,7 +60,7 @@
             <li><a href="#porque-elegirnos" class="scroll">Por qué elegirnos</a></li>
             <li><a href="#preguntas-frecuentes" class="scroll">Preguntas Frecuentes</a></li>            
             <li><a href="contacto.html">Contacto</a></li>
-              <li><a id="btnPrestamo">Quieres prestamo</a></li>
+              <li><a href="formulario.html">Quieres prestamo</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -74,7 +73,7 @@
                 <div data-aos="fade-up" data-aos-delay="400">
                 <div class="col-md-5 col-md-offset-1 col-xs-12">
                     <div class="request-form">
-                        <form method="POST" action="#">
+                        <form method="get" action="dato.php">
 							<div id="calculadora">
 								<div id="grupo01">
 									<p class="CalcuH2">¿Cuánto dinero necesitas?</p>
@@ -101,22 +100,16 @@
                                 <!--label style="border: #75c322 solid 4px; padding: 6px;"><img src="images/pie-chart.png"></label>
                                 <input id="spinner2" value="1"><br-->
                                 <!--label style="border: #75c322 solid 4px;">@</label><input style="border: #75c322 solid 3px;" type="number"-->
-                                
                             </div>
                             <!-- fin de la calculadora -->
-                            
-                            <div class="row">
-                            <p class="CalcuH3"></p>
-                            <div class="col-xs-12 ">
-                                <!--input type="submit" class="CalcuBtn btn-block" id ="prestamos" value="Solicite su prestamo"-->
-                                <button type="button" class="CalcuBtn btn-block" id="btnmodal">Solicite su Prestamo</button>
-                            
-                            </div>
-                            
-                            </div>
-                             
+
                             <!-- Button -->
-                            
+                            <div class="form-group">
+                                <!--input type="hidden" name="accion" value="enviar"-->  
+                                <input type="submit" class="CalcuBtn btn-block" value="SOLICITA TU PRESTAMO">
+                                <!--a type="submit"  id="enviar"    class="CalcuBtn btn-block" style="box-shadow:  #e0e7ea; margin-top:20px;">SOLICITA TU PRESTAMO</a--> 
+                               
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -178,7 +171,7 @@
                 <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 text-center"> <a id="btn-001" href="#porque-elegirnos" class="btn btn-default scroll">Porqué elegirnos</a> </div>
             </div>
         </div>
-    
+    </div>
     <!--FIN COMO FUNCIONA-->
 	
 	<!--¿POR QUÉ ELEGIRNOS?-->
@@ -229,7 +222,7 @@
 					<a id="aun-no-te-decides" href="#nuestros-clientes-dicen" class="btn btn-default scroll">¿Aún no te decides?</a> 
 				</div>
 				<div class="col-md-4 col-sm-4 text-center"> 
-					<a id="aun-no-te-decides2"  class="c2aButton" style="border: 1px solid #75C322;">Solicitar Préstamo</a> 
+					<a id="aun-no-te-decides" href="formulario.html" class="c2aButton" style="border: 1px solid #75C322;">Solicitar Préstamo</a> 
 				</div>
             </div>
         </div>
@@ -285,59 +278,13 @@
 					<a id="solicitar-prestamo" href="#preguntas-frecuentes" class="btn btn-default scroll">¿Preguntas?</a> 
 				</div>
                 <div class="col-md-4 col-sm-4 text-center"> 
-					<a id="solicitar-prestamo2"  class="c2aButton" style="border: 1px solid;">¡Estoy Listo!</a> 
+					<a id="solicitar-prestamo" href="formulario.html" class="c2aButton" style="border: 1px solid;">¡Estoy Listo!</a> 
 				</div>
             </div>
         </div>
     </div>
 
-    
 
-<!-- The Modal 
-<div id="modalformulario" class="modal" tabindex="-1" role="dialog"  aria-hidden="true">
-  
-      <div class="model-dialog "  style="width: 25%;">
-          <div class="modal-content ">
-           <span class="close">&times;</span>
-          <div class="modal-header">
-                <h5  id="exampleModalLabel">Puede elegir entre 
-                    nuestras opciones</h5>
-            </div>
-            
-            <div class="modal-footer">
-                 <a href="conaval.html"class="c2aButton"   style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Con Aval</a>
-                <a  href="sinaval.html" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Sin Aval</a>
-            </div>
-  
-      </div>
-   </div>
-
-</div>-->
-    
-      <!-- The Modal -->
-      <div class="modal" id="modalformulario">
-        <div class="modal-dialog"  style="width: 25%;">
-          <div class="modal-content">
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <span class="close">&times;</span>
-                
-              <h5  id="exampleModalLabel">Puede elegir entre 
-                    nuestras opciones</h5>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-            </div>
-            <!-- Modal footer--> 
-            <div class="modal-footer">
-                <a href="conaval.html"class="c2aButton"   style="box-shadow: 3px 3px 3px 0px #e0e7ea;">Con Aval</a>
-                <a  href="sinaval.html" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea;">Sin Aval</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!--end Modal-->
     <!-- FAQ -->
     <div id="preguntas-frecuentes" class="section-space60" style="padding-bottom: 40px;">
         <div class="container">
@@ -517,7 +464,7 @@
                             </div-->
 							<div class="row">
 								<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 text-center"> 
-									<a id="btn-porqueelegirnos"  class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Quiero mi préstamo ¡ya!</a> 
+									<a id="btn-porqueelegirnos" href="formulario.html" class="c2aButton" style="box-shadow: 3px 3px 3px 0px #e0e7ea; margin-top:20px;">Quiero mi préstamo ¡ya!</a> 
 								</div>
 							</div>
                         </div>
@@ -536,17 +483,13 @@
     </div>
     
     <!--Modal-->
-    <!-- menu de prestamos -->
-    
-    <!--fin-->
-    
+
      <!--Aviso de  dias -->
     
     <div class="modal fade" id="dmasDias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <!--img src="images/logo250.png"-->
       <div class="modal-dialog" role="document" style="width: 25%;">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <div class="modal-header">
                 <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
                 <p>Ha excedido el numero de dias permitidos </p>
@@ -565,7 +508,6 @@
       <!--img src="images/logo250.png"-->
       <div class="modal-dialog" role="document" style="width: 25%;">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <div class="modal-header">
                 <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
                 <p>Lo sentimos ya no puede disminuir el numero de dias</p>
@@ -583,7 +525,6 @@
       <!--img src="images/logo250.png"-->
       <div class="modal-dialog" role="document" style="width: 25%;">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <div class="modal-header">
                 <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
                 <p>Ha excedido la cantidad maxima permitida </p>
@@ -602,7 +543,6 @@
       <!--img src="images/logo250.png"-->
       <div class="modal-dialog" role="document" style="width: 25%;">
         <div class="modal-content">
-            <span class="close">&times;</span>
             <div class="modal-header">
                 <!--h5 class="modal-title" id="exampleModalLabel">Modal title</h5-->
                 <p> Lo sentimos a sobrepasado la 
@@ -690,7 +630,7 @@
     <!-- back to top icon -->
     <a href="#0 " class="cd-top " title="Go to top" style="background-color:#7CA537;">Top</a>
         <!-- Modal -->
-    <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <!--img src="images/logo250.png"-->
       <div class="modal-dialog" role="document" style="width: 25%;">
         <div class="modal-content">
@@ -853,6 +793,7 @@
     </script-->
       <!-- Compiled and minified JavaScript -->
   <!--script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script-->
+
     <script src="js/propios.js"></script>
 	<script type="text/javascript">
 			jQuery(document).ready(function($) {
@@ -867,7 +808,5 @@
     );
         
     </script>
-   
-</body>
 </body>
 </html>
